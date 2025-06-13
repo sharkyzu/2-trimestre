@@ -60,11 +60,37 @@ body {
     display: block;
 }
 
+.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+}
+
+,abas-texto{
+    background-color: var(--cor-de-fundo);
+    padding: 40px;
+    border-bottom: 0 0 40px 40px;
+} 
+
+.botao.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--botao-ativo) ;
+}
+
+.abas-conteudo.ativo{
+   display:block;
+}
+
+.abas-conteudo{
+  display: none;
+}
 @media screen and (mid-width:768px){
     .botoes{
         display: flex;
     }
     .botoes :first-child{
         border-radius: 40px 0 0 0;
-        
+    }
+    .botao:last-child{
+        border-radius:40px 0 0 0;
+    }
 }
